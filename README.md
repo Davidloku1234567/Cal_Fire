@@ -1,5 +1,5 @@
 # Cal_Fire
-study of California Wildfires using seven years of CalFire Data
+Study of California Wildfires using seven years of CalFire Data
 
 
 1. [ Introduction. ](#intro)
@@ -21,11 +21,14 @@ sometext
 <a name="cleaning"></a>
 ## 3. Cleaning
 
-text
+sometext
 
 <a name="eda"></a>
 ## 4. EDA
 
+sometext
+
 <a name="modeling"></a>
 ## 5. Modeling
 
+sometext
