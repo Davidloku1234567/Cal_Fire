@@ -130,3 +130,8 @@ dmypy.json
 
 #.json
 **.json
+
+#Large files in this repo
+df_acres
+coords_df
+df_timeseries
