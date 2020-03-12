@@ -12,7 +12,7 @@ app = Flask('fire_flask')
 @app.route('/fire_form')
 
 def form():
-    return render_template('form.html')
+    return render_template('fire_form.html')
 
 #submission page
 @app.route('/submit')
@@ -20,9 +20,9 @@ def form():
 def submit():
     user_input = request.args
 
-    date = []
-        int(user_input['date']),
-    ])
+    date = [
+    int(user_input['date'])]
+
     return jsonify({'data' : data})
     # ref=pd.read_json('../Cal_Fire/preds.json', typ='dictionary')
     # model = pickle.load(open('assets/model.p', 'rb'))
