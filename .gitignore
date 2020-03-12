@@ -136,4 +136,5 @@ df_acres
 coords_df
 df_timeseries
 **.csv
+**.p
 
