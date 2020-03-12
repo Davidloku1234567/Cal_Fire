@@ -20,15 +20,15 @@ def form():
 def submit():
     user_input = request.args
 
-    date = str([user_input['date'])]
-
-    date = jsonify({'date' : date})
+    date = user_input['date']
+    date_present = date[5:]
+    # date = jsonify({'date' : date})
     ref=pd.read_json('../Cal_Fire/preds.json', typ='dictionary')
     # model = pickle.load(open('assets/model.p', 'rb'))
     # preds = model.predict(X_test)
 
     pred = ref[date].round()
-    return render_template('results.html', prediction=pred)
+    return render_template('results.html', pred=pred, date=date_present)
 # manipulate data into a format that we pass to our model
 # Call app.run(debug=True) when python script is called
 
