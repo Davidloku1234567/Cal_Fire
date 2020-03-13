@@ -73,6 +73,8 @@ In order to deal with the large amount of missing data from various features set
 
 I was very excited to get my hands on the data set and immediatly start plotting fires geographically. The initial data set with with Lat/Long revieled some interesting trends. 
 
+![Burn Duration Graph](../Cal_Fire/burn_duration_graph.png)
+
 <a name="modeling"></a>
 ## 6. Modeling
 
