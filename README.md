@@ -16,9 +16,11 @@ Living in California, I am no stranger to fires and the damage they cause. 2019 
 <a name="statement"></a>
 ## 2. Problem Statement
 
-Using historical fire data, I will attempt to predict the burn duration of a fire given a location within the state of California. 
 
+Using historical fire data, I will attempt to predict the burn duration of a fire given a location within the state of California. 
 For these purposes "burn duration" is defined as time from fire ignition to 100% fire containment as reported by the local fire officials. For those unfamiliar with fire terminology, "containment" is how fire officials define that a fire will no longer spread past fire defenses such as fire breaks. 
+
+I will also attempt to predict the frequency of fire occurances in the state of California. 
 
 <a name="cleaning"></a>
 ## 3. Cleaning
