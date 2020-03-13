@@ -81,6 +81,13 @@ There is a clear gap in a good deal of the longitude/latitude data, specifically
 <a name="modeling"></a>
 ## 6. Modeling
 
-I dropped a good deal of the features that were mostly missing data such as `incident_name` and all of the address columns for the 37,000 entries that had lat/long that fell within the state of California. I ran a `DBSCAN` and attempted to sort the fires into clusters by burn duration
+I dropped a good deal of the features that were mostly missing data such as `incident_name` and all of the address columns for the 37,000 entries that had lat/long that fell within the state of California. I ran a `DBSCAN` and attempted to sort the fires into clusters by burn duration. I dummied out `fire_department_name`, `cause`, and `type_description` features. This was over 2,000 features, so I ran `PCA` (Principle Component Analysis) to settle on `146` features that had the most weight.
 
-sometext
+I ran `LinearRegerssion`, `RandomForestRegressor` and `KNeighborsRegressor` models and was unable to yield an R2 score above -0.0015. 
+
+
+After which, I log tranformed my $y$ variable and ran my models again. My after all of that, here are the best results:
+
+| Model       | Transformed y?| Description            |
+|-------------|------------|----------------------------------------------------------------------------------------------|
+
