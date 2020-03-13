@@ -8,6 +8,8 @@ Study of California Wildfires using seven years of CalFire Data
 4. [ Data Dictionary. ](#data_dictionary)
 5. [ EDA. ](#eda)
 6. [ Modeling. ](#modeling)
+7. [ Flask App. ](#flask)
+8. [ Conclusions. ](#conclusion)
 
 <a name="intro"></a>
 ## 1. Introduction
@@ -100,4 +102,22 @@ After which, I log tranformed my $y$ variable and ran my models again. My after 
 
 From these results it was beginning to become clear that I was nowhere close to predicting burn durations. I shifted gears to the second objective - predicting number of fires. 
 
-Modeling this was much easier. Every fire had a date, which means that I could focus more on the modeling and less on the missing data. 
+Modeling this was much easier. Every fire had a date, which means that I could focus more on the modeling and less on the missing data. I used a `.count` function to give my a dataframe with only two features. `start_date` and `count` This gave me about 134,000 events to model a time series with. 
+
+Initially I looked for and found some pretty stark seasonality. I then used `OLS` to model monthly, quartly and yearly lags in that date.
+
+![Seasonality Modeling](../Cal_Fire/2013_to_2020.png)
+
+I then took my dataset and reduced it so  and ran it through `ARIMA`, `SARIMA` and `SARIMAX` models. 
+
+The `SARIMAX` model output an 'MSE' of '20.25' and I was able to model it out over the course of the next year. The model eventualy defaulted to the mean, but predicted all the way through October. 
+
+![Seasonality Modeling](../Cal_Fire/12_mo_preds.png)
+
+<a name="flask"></a>
+## 7. Flask App
+
+I created a simple flask app to model the predictionsusing Python and HTML. The `SARIMAX` model was enourmous when running (48GB) and would have slowed the app down, so I simply printed all of 2020s predictions into a `.csv` and had the app read off that. This saved a lot of processing power and still gave off the desired result. 
+
+<a name="conclusion"></a>
+## 8. Conclusions
