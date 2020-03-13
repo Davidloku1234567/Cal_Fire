@@ -75,7 +75,7 @@ In order to deal with the large amount of missing data from various features set
 
 I was very excited to get my hands on the data set and immediatly start plotting fires geographically. The initial data set with with Lat/Long revieled some interesting trends. 
 
-![Burn Duration Graph](../Cal_Fire/burn_duration_graph.png)
+![Burn Duration Graph](../Cal_Fire/images/burn_duration_graph.png)
 
 There is a clear gap in a good deal of the longitude/latitude data, specifically in the areas of Los Angeles, Malibu and Riverside. So the accuracy of the coordinates is much better reported in the north of the state. It should be noted that I also had to limit the lat/long params of the graph as many of the coordinates placed fires outside of the state of California and as far away as Africa or placed fires in the middle of oceans. 
 
@@ -106,13 +106,13 @@ Modeling this was much easier. Every fire had a date, which means that I could f
 
 Initially I looked for and found some pretty stark seasonality. I then used `OLS` to model monthly, quartly and yearly lags in that date.
 
-![Seasonality Modeling](../Cal_Fire/2013_to_2020.png)
+![Seasonality Modeling](../Cal_Fire/images/2013_to_2020.png)
 
 I then took my dataset and reduced it so  and ran it through `ARIMA`, `SARIMA` and `SARIMAX` models. 
 
 The `SARIMAX` model output an 'MSE' of '20.25' and I was able to model it out over the course of the next year. The model eventualy defaulted to the mean, but predicted all the way through October. 
 
-![Seasonality Modeling](../Cal_Fire/12_mo_preds.png)
+![Seasonality Modeling](../Cal_Fire/images/12_mo_preds.png)
 
 <a name="flask"></a>
 ## 7. Flask App
