@@ -75,7 +75,12 @@ I was very excited to get my hands on the data set and immediatly start plotting
 
 ![Burn Duration Graph](../Cal_Fire/burn_duration_graph.png)
 
+There is a clear gap in a good deal of the longitude/latitude data, specifically in the areas of Los Angeles, Malibu and Riverside. So the accuracy of the coordinates is much better reported in the north of the state. It should be noted that I also had to limit the lat/long params of the graph as many of the coordinates placed fires outside of the state of California and as far away as Africa or placed fires in the middle of oceans. 
+
+
 <a name="modeling"></a>
 ## 6. Modeling
+
+I dropped a good deal of the features that were mostly missing data such as `incident_name` and all of the address columns for the 37,000 entries that had lat/long that fell within the state of California. I ran a `DBSCAN` and attempted to sort the fires into clusters by burn duration
 
 sometext
