@@ -121,3 +121,7 @@ I created a simple flask app to model the predictionsusing Python and HTML. The 
 
 <a name="conclusion"></a>
 ## 8. Conclusions
+
+While it turns out that wildfires are difficult to predict, I hope that even being able to predict the number of fires expected on any given day of the year would be useful to Cal Fire. It is my hope that efforts like this can help allocate resources in the future so that lives and properties are saved. 
+
+I would like to return to this project in the future and attempt to isolate predictions by county or even attempt again at burn durations through the use of a neural network. 
