@@ -88,6 +88,16 @@ I ran `LinearRegerssion`, `RandomForestRegressor` and `KNeighborsRegressor` mode
 
 After which, I log tranformed my $y$ variable and ran my models again. My after all of that, here are the best results:
 
-| Model       | Transformed y?| Description            |
-|-------------|------------|----------------------------------------------------------------------------------------------|
+| Model                 | Transformed $y$? | Train/Test | R2      |
+|-----------------------|----------------|------------|---------|
+| LinearRegression      | yes            | Train      | 0.0149  |
+| LinearRegression      | yes            | Test       | -0.0043 |
+| RandomForestRegressor | yes            | Train      | 0.8369  |
+| RandomForestRegressor | yes            | Test       | -0.1315 |
+| KNeighborsRegressor   | yes            | Train      | 0.20667 |
+| KNeighborsRegressor   | yes            | Test       | -0.1716 |
 
+
+From these results it was beginning to become clear that I was nowhere close to predicting burn durations. I shifted gears to the second objective - predicting number of fires. 
+
+Modeling this was much easier. Every fire had a date, which means that I could focus more on the modeling and less on the missing data. 
