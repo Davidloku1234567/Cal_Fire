@@ -36,6 +36,7 @@ I will also attempt to predict the frequency of fire occurances in the state of 
 | incident_number                            | int       | Identifying number for incident                               |
 | exposure_number                            | int       | Should represent number of structures exposed to fire incident- this number is inconsistent  |
 | nfirs_incidenttype_code_and_description    | str       | Code and description of fire type                             |
+| type_and_description  | str       | extracted description of fire without nfirs code                      |
 | incident_name                              | str       | Name of fire incident if named                                |
 | year                                       | int       | year incident occurred                                        |
 | start_date                                 | datetime  | Date fire started                                             |
