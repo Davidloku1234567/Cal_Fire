@@ -14,7 +14,7 @@ Study of California Wildfires using seven years of CalFire Data
 <a name="intro"></a>
 ## 1. Introduction
 
-Living in California, I am no stranger to fires and the damage they cause. 2019 may cost the state as much as $80 billion in lost property and economic activity. This is not a problem that is getting better. I personally had to drive through a major fire zone just to commute to work in 2017. People lose homes, national parks close and the economy is disrupted for millions of Californians. I believe that data can help anticipate when fires are going occur and where they will burn the longest. 
+Living in California, I am no stranger to fires and the damage they cause. The fire season of 2019 may cost the state as much as $80 billion in lost property and economic activity. This is not a problem that is getting better. I personally had to drive through a major fire zone just to commute to work in 2017. People lose homes, national parks close and the economy is disrupted for millions of Californians. I believe that data can help anticipate when fires are going occur and where they will burn the longest. 
 
 <a name="statement"></a>
 ## 2. Problem Statement
