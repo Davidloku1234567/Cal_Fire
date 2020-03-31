@@ -107,13 +107,13 @@ Modeling this was much easier. Every fire had a date, which means that I could f
 
 Initially I looked for and found some pretty stark seasonality. I then used `OLS` to model monthly, quartly and yearly lags in that date.
 
-![Seasonality Modeling](../Cal_Fire/images/2013_to_2020.png)
+![Seasonality Modeling](../Cal_Fire/Images/2013_to_2020.png)
 
 I then took my dataset and reduced it so  and ran it through `ARIMA`, `SARIMA` and `SARIMAX` models. 
 
 The `SARIMAX` model output an 'MSE' of '20.25' and I was able to model it out over the course of the next year. The model eventualy defaulted to the mean, but predicted all the way through October. 
 
-![Seasonality Modeling](../Cal_Fire/images/12_mo_preds.png)
+![Seasonality Modeling](../Cal_Fire/Images/12_mo_preds.png)
 
 <a name="flask"></a>
 ## 7. Flask App
