@@ -118,7 +118,7 @@ The `SARIMAX` model output an 'MSE' of '20.25' and I was able to model it out ov
 <a name="flask"></a>
 ## 7. Flask App
 
-I created a simple flask app to model the predictionsusing Python and HTML. The `SARIMAX` model was enourmous when running (48GB) and would have slowed the app down, so I simply printed all of 2020s predictions into a `.csv` and had the app read off that. This saved a lot of processing power and still gave off the desired result. 
+I created a simple flask app to model the predictionsusing Python and HTML. The `SARIMAX` model was enormous when running (48GB) and would have slowed the app down, so I simply printed all of 2020s predictions into a `.csv` and had the app read off that. This saved a lot of processing power and still gave off the desired result. 
 
 <a name="conclusion"></a>
 ## 8. Conclusions
