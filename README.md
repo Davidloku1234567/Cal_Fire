@@ -76,7 +76,7 @@ In order to deal with the large amount of missing data from various features set
 
 I was very excited to get my hands on the data set and immediatly start plotting fires geographically. The initial data set with with Lat/Long revieled some interesting trends. 
 
-![Burn Duration Graph](./Cal_Fire/images/burn_duration_graph.png)
+![Burn Duration Graph](./images/burn_duration_graph.png)
 
 There is a clear gap in a good deal of the longitude/latitude data, specifically in the areas of Los Angeles, Malibu and Riverside. So the accuracy of the coordinates is much better reported in the north of the state. It should be noted that I also had to limit the lat/long params of the graph as many of the coordinates placed fires outside of the state of California and as far away as Africa or placed fires in the middle of oceans. 
 
