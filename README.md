@@ -69,7 +69,7 @@ Missing data was much trickier. Most fire incidents were missing either containm
 
 Missing data in string features were simply replaced by strings such as "not provided".
 
-In order to deal with the large amount of missing data from various features sets, I broke the data frame up into smaller data frames that had specialized aspects. For example, the `coords_df` is a dataframe that was created specifically from all fires that had existing lat/long coordinates. 
+In order to deal with the large amount of missing data from various features sets, I broke the data frame up into smaller data frames that had specialized aspects. For example, the `coords_df` is a dataframe that was created specifically from all fires that had existing lat/long coordinates.
 
 <a name="eda"></a>
 ## 5. EDA
